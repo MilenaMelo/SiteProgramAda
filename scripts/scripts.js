@@ -1,7 +1,8 @@
+  //Função para mudança da navbar durante o scroll da tela
   $(window).scroll(function() { 
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 160)
   });
-
+  //Função para a passagem de cada div do carousel
   $('.carousel').carousel({
     interval: 2000
   })
@@ -12,7 +13,7 @@
   
   const target = document.querySelectorAll('[data-anime]');
   const animationClass = 'animate'; 
-  
+  //Função para o movimento da esquerda para direita da Objective Section
   function animeScroll() {
     const windowTop = window.pageYOffset + ((window.innerHeight*3)/4);
     target.forEach(function(element) {
@@ -31,3 +32,4 @@
     })
   }
   $("#demo01").animatedModal();
+  
